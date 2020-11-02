@@ -1,1 +1,1 @@
-# jonathan-c-liu.github.io
+This is my personal site! Check it out [here](https://jonathan-c-liu.github.io).
