@@ -1,3 +1,27 @@
+/* NavBar */
+
+.topnav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1
+}
+
+.topnav div {
+    float: left;
+    width:24.99999%;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav div:last-child {
+        display: none;
+    }
+    .topnav div {
+        width: 33.333333%
+    }
+}
+
+
 /* Profile */
 
 .header-container {
@@ -26,6 +50,8 @@
 
 .picture {
     width: 40%;
+    display: flex;
+    justify-content: center;
 }
 
 .info {
