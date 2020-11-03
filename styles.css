@@ -77,6 +77,10 @@
     font-weight: 500;
 }
 
+.info a {
+    font-weight: 500;
+}
+
 .propic {
     width: 100%;
     max-width: 300px;
