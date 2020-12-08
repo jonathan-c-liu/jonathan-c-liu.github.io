@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='./styles.css'>
+    <script type='text/javascript' src='./main.js'></script>
     <style>
         html,
         body,
@@ -25,20 +26,25 @@
     </style>
 </head>
 
-<body>
+<body onresize="resize()">
     <!-- Links (sit on top) -->
-    <div class="topnav w3-row w3-large w3-light-grey" id="my-topnav">
-        <div>
-            <a href="#" class="w3-button w3-block">Profile</a>
+    <div class="nav_bar">
+
+        <div class="nav_bar_main">
+            <a href="#" class="button">Profile</a>
+            <a href="#experience" class="button">Experience</a>
+            <a href="#contact" class="button">Contact</a>
+            <a href='./assets/JonathanLiuResume.pdf' target='_blank' class="button">Resume</a>
         </div>
-        <div>
-            <a href="#experience" class="w3-button w3-block">Experience</a>
-        </div>
-        <div>
-            <a href="#contact" class="w3-button w3-block">Contact</a>
-        </div>
-        <div>
-            <a href='./assets/JonathanLiuResume.pdf' target='_blank' class="w3-button w3-block">Resume</a>
+
+        <a id='hamburger_icon' href="javascript:void(0);" onclick="show_nav_bar()">
+            <img src='./assets/hamburger_icon.svg'></img>
+        </a>
+
+        <div id='nav_bar_mobile'class='nav_bar_mobile' >
+            <a href="#experience" class="button" onclick="show_nav_bar()">Experience</a>
+            <a href="#contact" class="button" onclick="show_nav_bar()">Contact</a>
+            <a href='./assets/JonathanLiuResume.pdf' target='_blank' class="button" onclick="show_nav_bar()">Resume</a>
         </div>
     </div>
 
@@ -180,37 +186,6 @@
     <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
         <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
     </footer>
-
-
-    <script>
-        // Slideshow
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function currentDiv(n) {
-            showDivs(slideIndex = n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demodots");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length };
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" w3-white", "");
-            }
-            x[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " w3-white";
-        }
-    </script>
 
 </body>
 
