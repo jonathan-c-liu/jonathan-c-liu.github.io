@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&family=Source+Sans+Pro:wght@700&display=swap');
+
+html,
+body,
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Sintony', sans-serif;
+}
+
 body{
     background-color: #FCFCFC;
     overflow-wrap: anywhere
@@ -9,26 +20,49 @@ body{
     position: fixed;
     right: 0;
     left: 0;
-    height: 45px;
+    height: 60px;
     top: 0;
     z-index: 1;
     background-color: #F1F1F1;
-    font-size: 18px;
     font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif
 }
 
-.nav_bar_main {
+.nav_bar_element {
     float: left;
-    width: 100%;
     height: 100%;
 }
 
-.nav_bar_main a {
-    text-align: left;
-    float: left;
-    width: auto;
-    margin-left: 1%;
-    margin-right: 5%;
+.nav_bar_left {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    font-size: 28px;
+}
+
+.nav_bar_center {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.nav_bar_center a {
+    margin: auto
+}
+
+.nav_bar_right {
+    width: calc(25% - 15px);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.nav_bar_right span {
+    height: 50px;
+    padding: 14px 14px
 }
 
 .button {
@@ -38,7 +72,7 @@ body{
 
 .nav_bar_mobile {
     position: fixed;
-    margin-top: 45px;
+    margin-top: 60px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -55,18 +89,20 @@ body{
 }
 
 @media screen and (max-width: 800px) {
-    .nav_bar_main {
-        font-size: 20px;
-        width: 50%;
+    .nav_bar_left {
+        width: 70%;
     }
-    .nav_bar_main a:not(:first-child), .dropdown .dropbtn {
+    .nav_bar_center {
+        display: none;
+    }
+    .nav_bar_right {
         display: none;
     }
     #hamburger_icon {
         float: right;
-        height: 100%;
         display: block;
-        padding: 8px 16px;
+        justify-content: center;
+        padding: 12px 16px;
     }
   }
 
