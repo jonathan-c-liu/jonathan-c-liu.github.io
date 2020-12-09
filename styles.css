@@ -12,9 +12,6 @@ h4 {
 body{
     background-color: #FCFCFC;
     overflow-wrap: anywhere;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 90%;
 }
 
 /* NavBar */
@@ -117,6 +114,15 @@ body{
         display: none;
     }
   }
+
+.content {
+    width: 1000px;
+    max-width: 90%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 /* Profile */
 
