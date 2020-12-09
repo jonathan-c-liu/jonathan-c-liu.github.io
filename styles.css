@@ -11,7 +11,7 @@ h4 {
 
 body{
     background-color: #FCFCFC;
-    overflow-wrap: anywhere;
+    word-wrap: break-word;
 }
 
 /* NavBar */
@@ -253,5 +253,12 @@ body{
 /* Contact */
 
 .contact-container {
+    text-align: center;
+}
+
+.footer {
+    background-color: #F1F1F1;
+    padding-top: 32px;
+    padding-bottom: 32px;
     text-align: center;
 }
