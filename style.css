@@ -613,9 +613,9 @@ a:hover, a:active, a:focus {
   letter-spacing: 0.2px;
 }
 
-#single-project .text-center strong {
-  display: block;
-  padding-top: 12px;
+#single-project .video {
+  width: 100%;
+  height: 100%;
 }
 
 

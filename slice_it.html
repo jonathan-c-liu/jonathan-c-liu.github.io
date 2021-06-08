@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Slice-It - Jonathan Liu</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- PRE LOADER -->
+
+    <div class="preloader">
+        <div class="sk-spinner sk-spinner-wordpress">
+            <span class="sk-inner-circle"></span>
+        </div>
+    </div>
+
+    <!-- Navigation section  -->
+
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">jonathan liu</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="./index.html">projects</a></li>
+                    <li><a href="./about.html">about me</a></li>
+                    <li><a href='./JonathanLiuResume.pdf' target='_blank'>resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Single Project Section -->
+
+    <section id="single-project">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <h1>Slice-It</h1>
+                    <p>Summer 2019</p>
+
+                    <hr>
+
+                    <div class="col-md-6 col-sm-6">
+                        <h3>Technologies</h3>
+                        <p>C#, SolidWorks COM API</p>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                        <h3>Role</h3>
+                        <p>Automation Intern - Developer</p>
+                    </div>
+
+                    <div class="text-left col-md-12 col-sm-12">
+                        <h3>Overview</h3>
+                        <p>Slice-It is a SolidWorks add-in that I independently created during my internship at Dassault
+                            Systemès. It takes a solid 3D part
+                            and generates 2D slices that when laser-cut or vinyl-cut can be assembled to create a full
+                            3D model. Users can set slice type,
+                            count, thickness, as well as the option to include labels. Once slices are created, the user
+                            can drag and rotate slices to
+                            customize the final product before printing and assembling.</p>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/d4ZNhTwPzKE?autoplay=1&mute=1"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12">
+                        <img src="./images/slice_it_main.png" class="img-responsive" alt="Portfolio">
+                    </div>
+
+                    <div class="col-md-12 col-sm-12">
+                        <img src="./images/slice_it_cutout.jpg" class="img-responsive" alt="Portfolio">
+                    </div>
+
+                    <div class="text-left col-md-12 col-sm-12">
+                        <h3>Responsibilities</h3>
+                        <ul>
+                            <li>Independently developed 3D CAD add-in for SolidWorks in C# using the SolidWorks COM API
+                                that takes cross
+                                sections of a part and generates slices that can be laser cut and assembled into a
+                                physical piece</li>
+                            <li>Formulated algorithms for backend calculations and slice generation with extensive
+                                implementation of matrices</li>
+                            <li>Specialized in SolidWorks and FabLab machines such as laser cutters and vinyl cutters to
+                                manufacture slices</li>
+                            <li>Created end-of-project demonstration video for upper management to persuade an eventual
+                                future release</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+        <div class="container">
+            <hr>
+            <div class="text-center">
+                <a href="mailto:jonathanliu2022@u.northwestern.edu"><img src='./icons/email_icon.svg'></img></a>
+                <a href="https://linkedin.com/in/jonathan-liu-936417180"><img src='./icons/linkedin_icon.svg'></img></a>
+                <a href="https://github.com/jonathan-c-liu"><img src='./icons/github_icon.svg'></img></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- SCRIPTS -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
