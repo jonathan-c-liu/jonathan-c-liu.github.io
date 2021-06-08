@@ -1,184 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Jonathan Liu</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href='./styles.css'>
-    <script type='text/javascript' src='./main.js'></script>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <title>Jonathan Liu</title>
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="./style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Links (sit on top) -->
-    <div class="nav_bar">
 
-        <div class="nav_bar_element nav_bar_left">
-            <a href="#" class="button">Jonathan Liu</a>
-        </div>
+     <!-- PRE LOADER -->
 
-        <div class="nav_bar_element nav_bar_center">
-            <a href="#experience" class="button">Experience</a>
-            <a href="#contact" class="button">Contact</a>
-            <a href='./assets/JonathanLiuResume.pdf' target='_blank' class="button">Resume</a>
-        </div>
+     <div class="preloader">
+          <div class="sk-spinner sk-spinner-wordpress">
+               <span class="sk-inner-circle"></span>
+          </div>
+     </div>
 
-        <div class="nav_bar_element nav_bar_right">
-            <a href='https://github.com/jonathan-c-liu' target='_blank' ><span class="fa fa-github-square fa-2x"></span></a>
-            <a href='https://linkedin.com/in/jonathan-liu-936417180' target='_blank' ><span class="fa fa-linkedin-square fa-2x"></img></a>
-            <a href='mailto:jonathanliu2022@u.northwestern.edu'><span class="fa fa-envelope fa-2x"></span></a>
-        </div>
+     <!-- Navigation section  -->
 
-        <a id='hamburger_icon' href="javascript:void(0);" onclick="show_nav_bar()">
-            <img src='./assets/hamburger_icon.svg'></img>
-        </a>
+     <div class="navbar navbar-default navbar-static-top" role="navigation">
+          <div class="container">
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand">jonathan liu</a>
+               </div>
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                         <li class="active"><a href="index.html">projects</a></li>
+                         <li><a href="about.html">about me</a></li>
+                         <li><a href='./JonathanLiuResume.pdf' target='_blank'>resume</a></li>
+                    </ul>
+               </div>
+          </div>
+     </div>
 
-        <div id='nav_bar_mobile'class='nav_bar_mobile' >
-            <a href="#experience" class="button" onclick="show_nav_bar()">Experience</a>
-            <a href="#contact" class="button" onclick="show_nav_bar()">Contact</a>
-            <a href='./assets/JonathanLiuResume.pdf' target='_blank' class="button" onclick="show_nav_bar()">Resume</a>
-        </div>
-    </div>
+     <!-- Home Section -->
 
-    <!-- Content -->
-    <div class="content">
+     <section id="home">
+          <div class="container">
+               <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                         <h3>computer scientist, problem solver, tech enthusiast</h3>
+                         <hr>
+                    </div>
+               </div>
+          </div>
+     </section>
 
-        <!-- Profile -->
+     <!-- Portfolio Section -->
 
-        <div class="header-container">
-            <span class="header-text w3-bottombar w3-border-dark-grey">Jonathan Liu</span>
-        </div>
+     <section id="portfolio">
+          <div class="container">
+               <div class="row tiles">
+                    <article class="style1">
+                         <span class="image">
+                              <img src="./images/slice-it_home.png" class="img-responsive" alt="Slice-It" />
+                         </span>
+                         <a href="generic.html">
+                              <h2>Slice-It</h2>
+                              <p class="content">SolidWorks add-In that generates printable slices</p>
+                         </a>
+                    </article>
+                    <article class="style2">
+                         <span class="image">
+                              <img src="./images/caravan_home.png" class="img-responsive" alt="Caravan Carpool" />
+                         </span>
+                         <a href="caravan_carpool.html">
+                              <h2>Caravan Carpool</h2>
+                              <p class="content">iOS app for Denver skiiers to carpool to resorts</p>
+                         </a>
+                    </article>
+                    <article class="style3">
+                         <span class="image">
+                              <img src="./images/peerpal_home.png" class="img-responsive" alt="PeerPal" />
+                         </span>
+                         <a href="generic.html">
+                              <h2>PeerPal</h2>
+                              <p class="content">Website enabling peer-grading workflow for class assignments</p>
+                         </a>
+                    </article>
+               </div>
+          </div>
+     </section>
 
-        <div class="row">
-            <div class="column picture">
-                <img class="propic" src="./assets/propic.jpg" alt="Jonathan Liu">
-            </div>
-            <div class="column info">
-                <h1>Hi, my name is Jonathan and I'm a junior studying CS at Northwestern. I am a fast learner and am goal and detail oriented.
-                    I thrive working both independently and in teams.</h1>
-                <h2>Education: <span>Northwestern University</span></h2>
-                <h2>Expected Graduation: <span>June, 2022</span></h2>
-                <h2>School Location: <span>Evanston, IL</span></h2>
-                <h2>Home Town: <span>Boston, MA</span></h2>
-                <h2>GitHub: <a target="_blank" href="https://github.com/jonathan-c-liu/">github.com/jonathan-c-liu</a></h2>
-            </div>
-        </div>
+     <!-- Footer Section -->
 
-        <!-- Experience -->
-        <div class="w3-row-padding" id="experience">
-            <div class="w3-center w3-padding-64">
-                <span class="w3-xxlarge w3-bottombar w3-border-dark-grey">Experience</span>
-            </div>
-        </div>
+     <footer class="footer">
+          <div class="container">
+               <hr>
+               <div class="text-center">
+                    <a href="mailto:jonathanliu2022@u.northwestern.edu"><img src='./icons/email_icon.svg'></img></a>
+                    <a href="https://linkedin.com/in/jonathan-liu-936417180"><img
+                              src='./icons/linkedin_icon.svg'></img></a>
+                    <a href="https://github.com/jonathan-c-liu"><img src='./icons/github_icon.svg'></img></a>
+               </div>
+          </div>
+     </footer>
 
-        <div class='experience'>
-            <div class='experience-title-container'>
-                <img class='company-pic' src='./assets/dassault.png' alt='Dassault Systemes' />
-                <div>
-                    <div class='experience-title'><span>Dassault Systemes</span> &#183; Intern - Developer</div>
-                    <i class='experience-date'>July 2019 - September 2019</i>
-                </div>
-            </div>
-            <div class='video-container'>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/d4ZNhTwPzKE" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class='experience-info-container'>
-                <p class='experience-info'>&#8226; Independently developed SolidWorks Slicer add-in using the SolidWorks COM API that takes cross sections of a part
-                    and generates cuttable slices that can be assembled into a standing item</p>
-                <p class='experience-info'>&#8226; Extensively implemented vectors and transformation matrices in backend calculations  </p>
-                <p class='experience-info'>&#8226; Specialized in SolidWorks and FabLab machines such as laser cutters and vinyl cutters to manufacture slices</p>
-            </div>
-        </div>
-        
-        <div class='experience'>
-            <div class='experience-title-container'>
-                <img class='company-pic' src='./assets/caravan.jpg' alt='Caravan' />
-                <div>
-                    <div class='experience-title'><span>Caravan Carpool</span> &#183; Software Engineer</div>
-                    <i class='experience-date'>July 2020 - September 2020</i>
-                </div>
-            </div>
-            <img class='image' src="./assets/caravanmain.png" alt="Caravan App Store">
-            <div class='experience-info-container'>
-                <p class='experience-info'>&#8226; Launched Expo React Native iOS carpool app for skiers in Denver with a team of six engineers</p>
-                <p class='experience-info'>&#8226; Led pair programming sprints and implementation of multiple Expo APIs in full stack agile development</p>
-                <p class='experience-info'>&#8226; Streamlined database structure in Firebase Realtime Database and led backend refactorization</p>
-                <p class='experience-info'>&#8226; Wrote automated database maintenance script using cron job with Google Cloud Scheduler</p>
-            </div>
-        </div>
 
-        <div class='experience'>
-            <div class='experience-title-container'>
-                <img class='company-pic' src='./assets/northwestern.jpg' alt='Northwestern' />
-                <div>
-                    <div class='experience-title'><span>PeerPal</span> &#183; Research Assistant</div>
-                    <i class='experience-date'>September 2020 - Present</i>
-                </div>
-            </div>
-            <div class='experience-info-container'>
-                <p class='experience-info'>&#8226; Full stack contributor in a team of three developers supervised by Northwestern faculty</p>
-                <p class='experience-info'>&#8226; Developing student peer-grading tool that can be used with any learning system partnered with the IMS Global Consortium</p>
-            </div>
-        </div>
+     <!-- SCRIPTS -->
 
-        <div class='experience'>
-            <div class='experience-title-container'>
-                <img class='company-pic' src='./assets/northwestern.jpg' alt='Northwestern' />
-                <div>
-                    <div class='experience-title'><span>Northwestern IT Support Center</span> &#183; Senior Consultant</div>
-                    <i class='experience-date'>October 2018 - July 2020</i>
-                </div>
-            </div>
-            <div class='experience-info-container'>
-                <p class='experience-info'>&#8226; Assessed and resolved NUIT-supported software and service issues for over 500 students and faculty</p>
-                <p class='experience-info'>&#8226; Identified phishing and other more complex issues to escalate users to the appropriate departments and groups</p>
-                <p class='experience-info'>&#8226; Communicated with users promptly and professionally providing over-the-phone, email, and walk-in assistance</p>
-                <p class='experience-info'>&#8226; Logged concise, in-depth documentation for each case for future reference</p>
-            </div>
-        </div>
-
-        <div class='experience'>
-            <div class='experience-title-container'>
-                <img class='company-pic' src='./assets/northwestern.jpg' alt='Northwestern' />
-                <div>
-                    <div class='experience-title'><span>Northwestern University, Design / Thinking / Communication Course</span> &#183; Lead Product Designer</div>
-                    <i class='experience-date'>Spring 2019</i>
-                </div>
-            </div>
-            <div class='experience-info-container'>
-                <p class='experience-info'>&#8226;  Designed and constructed agility A-Ramp transportation and storage device for canine athletics training facility
-                    Unleashed in Evanston to enable one-person operation of the A-ramp</p>
-                <p class='experience-info'>&#8226; Consulted closely with client to determine specific requirements and performed competitive research</p>
-                <p class='experience-info'>&#8226; Improved design in multiple iterations by incorporating client and professional feedback</p>
-            </div>
-        </div>
-
-        <!-- Contact -->
-        <div class="w3-row-padding" id="contact">
-            <div class="w3-center w3-padding-64">
-                <span class="w3-xxlarge w3-bottombar w3-border-dark-grey">Contact</span>
-            </div>
-            <div class="contact-container">
-                <div class="w3-section">
-                    <h3><span class="fa fa-envelope"></span> <a target="_blank" href="mailto:jonathanliu2022@u.northwestern.edu">jonathanliu2022@u.northwestern.edu</a></h3>
-                </div>
-                <div class="w3-section">
-                    <h3><span class="fa fa-linkedin-square"></span> <a target="_blank" href="https://www.linkedin.com/in/jonathan-liu-936417180/">linkedin.com/in/jonathan-liu-936417180</a></h3>
-                </div>
-                <div class="w3-section">
-                    <h3><span class="fa fa-github-square"></span> <a target="_blank" href="https://github.com/jonathan-c-liu/">github.com/jonathan-c-liu</a></h3>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-
-    <footer class="footer">
-        <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    </footer>
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/custom.js"></script>
 
 </body>
 
