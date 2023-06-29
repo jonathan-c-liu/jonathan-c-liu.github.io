@@ -55,7 +55,7 @@ body {
     height: 100%;
 }
 .heart-corner {
-    position: absolute;
+    position: fixed;
     animation: pulse 1s infinite;
     color: red;
 }
