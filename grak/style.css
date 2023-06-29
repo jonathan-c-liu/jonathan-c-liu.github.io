@@ -6,11 +6,19 @@ body {
     color: red;
 }
 
-.container {
+.top-container {
     margin: auto;
-    padding: 50px 0px;
+    padding-top: 50px;
+    padding-bottom: 25px;
     width: 90%;
     text-align: center;
+}
+
+.bottom-container {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    padding-top: 25px;
 }
 
 @keyframes jiggle {
@@ -25,7 +33,7 @@ body {
 
 .grak-arm {
     display: block;
-    width: 200px;
+    width: 150px;
     max-width: 100%;
     height: auto;
     margin: auto;
