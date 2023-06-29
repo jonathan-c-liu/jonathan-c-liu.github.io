@@ -1,0 +1,64 @@
+body {
+    background: #7BAFD4 ;
+}
+
+.heart {
+    color: red;
+}
+
+.container {
+    margin: auto;
+    padding: 50px 0px;
+    width: 90%;
+    text-align: center;
+}
+
+@keyframes jiggle {
+    0% { transform: rotate(-45deg); }
+    50% { transform: rotate(45deg); }
+    100% { transform: rotate(-45deg); }
+}
+  
+.jiggle-effect {
+    animation: jiggle 2s infinite;
+}
+
+.grak-arm {
+    display: block;
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1.5); }
+    50% { transform: scale(2); }
+    100% { transform: scale(1.5); }
+}
+
+.container {
+    position: relative;
+    height: 100%;
+}
+.heart-corner {
+    position: absolute;
+    animation: pulse 1s infinite;
+    color: red;
+}
+.top-left {
+    top: 30px;
+    left: 20px;
+}
+.top-right {
+    top: 30px;
+    right: 20px;
+}
+.bottom-left {
+    bottom: 30px;
+    left: 20px;
+}
+.bottom-right {
+    bottom: 30px;
+    right: 20px;
+}
