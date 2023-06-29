@@ -4,7 +4,7 @@ body {
 }
 
 .text {
-    font-size: 30px;
+    font-size: 1.8em;
 }
 
 .heart {
@@ -13,8 +13,8 @@ body {
 
 .top-container {
     margin: auto;
-    padding-top: 100px;
-    padding-bottom: 25px;
+    padding-top: 5em;
+    padding-bottom: 2.5em;
     width: 90%;
     text-align: center;
 }
@@ -23,7 +23,7 @@ body {
     margin: auto;
     width: 90%;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 2.5em;
 }
 
 @keyframes jiggle {
@@ -39,7 +39,7 @@ body {
 .grak-arm {
     display: block;
     width: 50%;
-    max-width: 150px;
+    max-width: 15em;
     height: auto;
     margin: auto;
 }
